@@ -50,7 +50,7 @@ const PreviouslySentMessages: React.FC = () => {
         </TableHead>
         <TableBody>
             {mailsContext.mails.map((row) => (
-              <StyledTableRow key={row.subject}>
+              <StyledTableRow key={row.id}>
                 <StyledTableCell component="th" scope="row">{row.created_at}</StyledTableCell>
                 <StyledTableCell align="left">{row.subject}</StyledTableCell>
                 <StyledTableCell align="left">{row.body}</StyledTableCell>
